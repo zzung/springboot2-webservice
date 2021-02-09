@@ -17,6 +17,8 @@ import static org.hamcrest.Matchers.is;
  *      --> SpringRunner가 스프링 실행자
  *
  * @WebMvcTest : 여러 테스트 어노테이션중에서 web에 집중 할 수 있는 어노테이션
+ *      --> JPA 기능이 작동하지 않음, 외부 연동과 관련된 부분만 활성화됨
+ *      --> JPA 기능까지 한번에 테스트 할 때는 @SpringBootTest, @TestRestTemplate 사용 !
  *      --> @Controller, @ControllerAdvice 사용 O
  *      --> @Service, @Component, @Repository 사용 X
  *
